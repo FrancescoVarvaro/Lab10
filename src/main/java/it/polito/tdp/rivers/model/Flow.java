@@ -28,7 +28,7 @@ public class Flow {
 	public void setFlow(double flow) {
 		this.flow = flow;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Flow [day=" + day + ", flow=" + flow + ", river=" + river + "]";

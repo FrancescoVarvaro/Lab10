@@ -43,7 +43,12 @@ public class River {
 	}
 
 	public void setFlows(List<Flow> flows) {
-		this.flows = flows;
+		if(this.flows.isEmpty())
+			this.flows = flows;
+		else {
+			this.flows.clear();
+			this.flows = flows; 
+		}
 	}
 
 	public List<Flow> getFlows() {
